@@ -106,3 +106,4 @@ For production-style authentication, hash passwords with a modern password hashi
 - If the executable does not start, rebuild it with a local C++ compiler.
 - If login always fails, make sure `registry.txt` is in the same folder as the executable.
 - If the screen-clearing or pause commands fail, run the program from Windows Command Prompt or PowerShell.
+- If your compiler warns about calls to `main()`, the warning comes from the current demo control flow. The program may still build, but a future cleanup should replace those calls with a loop around the menu.
